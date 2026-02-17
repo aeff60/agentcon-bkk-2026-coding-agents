@@ -15,7 +15,7 @@ mdc: true
 colorSchema: dark
 fonts:
   sans: 'Inter'
-  serif: 'Robot Slab'
+  serif: 'Roboto Slab'
   mono: 'Fira Code'
 ---
 

@@ -47,7 +47,7 @@ npm run export
 ## 📝 Presentation Features
 
 - **Dark Theme**: Optimized for technical conference presentations
-- **15 Slides**: Title, agenda, 12 content slides, and Q&A
+- **16 Slides**: Title, agenda, 12 content slides, Q&A, and thank you
 - **Interactive Elements**: Click animations, code examples, and diagrams
 - **Modern Styling**: Clean typography with Inter, Robot Slab, and Fira Code fonts
 - **Code Highlighting**: Syntax highlighting with Shiki
