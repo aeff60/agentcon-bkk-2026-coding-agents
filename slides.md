@@ -5,12 +5,12 @@ class: text-center
 highlighter: shiki
 lineNumbers: true
 info: |
-  ## Getting Started with Coding Agents using GitHub Copilot
-  Presentation for AgentCon BKK 2026
+  ## เริ่มต้นใช้งาน Coding Agents ด้วย GitHub Copilot
+  สไลด์สำหรับงาน AgentCon BKK 2026
 drawings:
   persist: false
 transition: slide-left
-title: Getting Started with Coding Agents using GitHub Copilot
+title: เริ่มต้นใช้งาน Coding Agents ด้วย GitHub Copilot
 mdc: true
 colorSchema: dark
 fonts:
@@ -21,11 +21,9 @@ fonts:
 
 # Getting Started with Coding Agents using GitHub Copilot
 
-A Technical Deep Dive into AI-Powered Development
-
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space to continue <carbon:arrow-right class="inline"/>
+    กด Space เพื่อไปต่อ <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
@@ -40,21 +38,21 @@ A Technical Deep Dive into AI-Powered Development
 layout: default
 ---
 
-# Agenda
+# หัวข้อวันนี้
 
 <v-clicks>
 
-- 🤖 **What are Coding Agents?** - Understanding AI-powered development assistants
-- 🎯 **GitHub Copilot Overview** - Features and capabilities
-- 🛠️ **Getting Started** - Setup and configuration
-- 💡 **Core Features** - Code completion, chat, and more
-- 🔧 **Advanced Usage** - Slash commands and context
-- 🚀 **Best Practices** - Writing effective prompts
-- 📊 **Real-World Examples** - Practical use cases
-- 🔒 **Security & Privacy** - Keeping your code safe
-- 🎓 **Learning Strategies** - Maximizing productivity
-- 🔮 **Future of Coding Agents** - What's next?
-- 📝 **Q&A** - Your questions answered
+- 🤖 **Coding Agents คืออะไร?** - เข้าใจผู้ช่วยเขียนโค้ดด้วย AI
+- 🎯 **ภาพรวม GitHub Copilot** - ความสามารถหลักที่ควรรู้
+- 🛠️ **เริ่มต้นใช้งาน** - ติดตั้งและตั้งค่าให้พร้อม
+- 💡 **ฟีเจอร์สำคัญ** - แนะนำโค้ด, แชต, และอีกมากมาย
+- 🔧 **การใช้งานขั้นสูง** - Slash commands และการใส่บริบท
+- 🚀 **แนวทางที่ควรทำ** - เขียนพรอมป์ให้ได้ผลลัพธ์ดี
+- 📊 **ตัวอย่างจริง** - เคสใช้งานที่ทำได้ทันที
+- 🔒 **ความปลอดภัยและความเป็นส่วนตัว** - ใช้อย่างมั่นใจ
+- 🎓 **กลยุทธ์การเรียนรู้** - เพิ่มประสิทธิภาพการทำงาน
+- 🔮 **อนาคตของ Coding Agents** - กำลังไปทางไหน
+- 📝 **Q&A** - ถาม-ตอบท้ายเซสชัน
 
 </v-clicks>
 
@@ -62,19 +60,19 @@ layout: default
 layout: two-cols
 ---
 
-# What are Coding Agents?
+# Coding Agents คืออะไร?
 
-AI-powered assistants that understand and generate code
+ผู้ช่วย AI ที่เข้าใจโค้ดและช่วยสร้างโค้ดให้เรา
 
 <v-clicks>
 
-### Key Characteristics
+### คุณสมบัติหลัก
 
-- 🧠 **Context-Aware** - Understands your codebase
-- 💬 **Conversational** - Natural language interaction
-- 🎯 **Task-Focused** - Completes specific coding tasks
-- 🔄 **Iterative** - Learns from feedback
-- 🛡️ **Safe** - Built with security in mind
+- 🧠 **เข้าใจบริบท (Context-Aware)** - มองภาพรวมโปรเจกต์ได้
+- 💬 **คุยได้แบบธรรมชาติ (Conversational)** - ใช้ภาษาคนได้
+- 🎯 **โฟกัสงาน (Task-Focused)** - ทำงานเฉพาะจุดได้ดี
+- 🔄 **ปรับตามฟีดแบ็ก (Iterative)** - แก้และปรับได้เป็นรอบ
+- 🛡️ **คำนึงถึงความปลอดภัย (Safe)** - ออกแบบมาให้ใช้งานอย่างปลอดภัย
 
 </v-clicks>
 
@@ -86,15 +84,15 @@ AI-powered assistants that understand and generate code
 
 ```mermaid
 graph TD
-    A[Autocomplete] --> B[Snippet Suggestions]
-    B --> C[Context-Aware Completion]
-    C --> D[Chat-Based Assistance]
-    D --> E[Autonomous Agents]
-    E --> F[Multi-Agent Systems]
+  A[เติมโค้ดอัตโนมัติ] --> B[แนะนำโค้ดสั้นๆ]
+  B --> C[เติมโค้ดตามบริบท]
+  C --> D[ผู้ช่วยแบบแชต]
+  D --> E[เอเจนต์ทำงานอัตโนมัติ]
+  E --> F[ระบบหลายเอเจนต์]
 ```
 
 <div class="mt-4 text-sm opacity-75">
-We're currently in the Agent era
+ตอนนี้เราอยู่ในยุคของ Agent
 </div>
 
 </v-clicks>
@@ -103,9 +101,9 @@ We're currently in the Agent era
 layout: default
 ---
 
-# GitHub Copilot Overview
+# ภาพรวม GitHub Copilot
 
-Your AI pair programmer powered by OpenAI Codex
+ผู้ช่วยเขียนโค้ดคู่ใจที่ขับเคลื่อนด้วย OpenAI Codex
 
 <div class="grid grid-cols-2 gap-4 mt-8">
 
@@ -114,44 +112,44 @@ Your AI pair programmer powered by OpenAI Codex
 <div class="p-4 rounded bg-gray-800">
 
 ### 🎯 Code Completion
-Real-time suggestions as you type
-- Function implementations
-- Test cases
-- Documentation
-- Comments
+แนะนำโค้ดแบบเรียลไทม์ขณะพิมพ์
+- โครงฟังก์ชันพร้อมใช้งาน
+- ตัวอย่างเทสต์
+- เอกสารประกอบโค้ด
+- คอมเมนต์อธิบาย
 
 </div>
 
 <div class="p-4 rounded bg-gray-800">
 
 ### 💬 Copilot Chat
-Interactive conversations about code
-- Explain complex code
-- Debug issues
-- Refactor suggestions
-- Architecture guidance
+พูดคุยกับ AI เกี่ยวกับโค้ดได้ทันที
+- อธิบายโค้ดที่ซับซ้อน
+- ช่วยไล่บั๊ก
+- แนะนำการรีแฟกเตอร์
+- ช่วยคิดโครงสร้างระบบ
 
 </div>
 
 <div class="p-4 rounded bg-gray-800">
 
 ### 🔧 Slash Commands
-Quick, powerful commands
-- `/explain` - Code explanation
-- `/fix` - Bug fixes
-- `/tests` - Generate tests
-- `/doc` - Documentation
+คำสั่งลัดที่ใช้งานเร็วและตรงจุด
+- `/explain` - อธิบายโค้ด
+- `/fix` - เสนอแนวทางแก้บั๊ก
+- `/tests` - สร้างเทสต์
+- `/doc` - สร้างเอกสารประกอบ
 
 </div>
 
 <div class="p-4 rounded bg-gray-800">
 
 ### 🎨 Workspace Context
-Full repository awareness
-- Multi-file understanding
-- Project patterns
-- Dependency awareness
-- Architecture comprehension
+เข้าใจบริบททั้งโปรเจกต์
+- มองข้ามหลายไฟล์ได้
+- เรียนรู้แพตเทิร์นของทีม
+- เข้าใจ dependency
+- เห็นภาพสถาปัตยกรรมโดยรวม
 
 </div>
 
@@ -163,36 +161,36 @@ Full repository awareness
 layout: default
 ---
 
-# Getting Started with GitHub Copilot
+# เริ่มต้นใช้งาน GitHub Copilot
 
-Quick setup guide for immediate productivity
+ตั้งค่าไม่ยาก พร้อมใช้งานได้ทันที
 
 <v-clicks>
 
-### Prerequisites
+### สิ่งที่ต้องมี
 
 ```bash
-# 1. Install VS Code or compatible IDE
-# 2. Install GitHub Copilot extension
-# 3. Sign in with GitHub account (requires subscription)
+# 1. ติดตั้ง VS Code หรือ IDE ที่รองรับ
+# 2. ติดตั้งส่วนขยาย GitHub Copilot
+# 3. ล็อกอินด้วยบัญชี GitHub (ต้องมีสิทธิ์ใช้งาน)
 ```
 
-### Installation Steps
+### ขั้นตอนติดตั้ง
 
-1. **Install Extension**
-   - Open VS Code Extensions (⇧⌘X)
-   - Search for "GitHub Copilot"
-   - Click Install
+1. **ติดตั้งส่วนขยาย**
+  - เปิดหน้า Extensions ใน VS Code (⇧⌘X)
+  - ค้นหา "GitHub Copilot"
+  - กด Install
 
-2. **Authenticate**
-   - Sign in with GitHub
-   - Authorize the extension
-   - Verify subscription status
+2. **ยืนยันตัวตน**
+  - ล็อกอินด้วย GitHub
+  - อนุญาตการใช้งานส่วนขยาย
+  - ตรวจสอบสถานะสิทธิ์ใช้งาน
 
-3. **Start Coding**
-   - Open any file
-   - Start typing - suggestions appear automatically
-   - Press `Tab` to accept, `Esc` to dismiss
+3. **เริ่มเขียนโค้ด**
+  - เปิดไฟล์ที่ต้องการ
+  - เริ่มพิมพ์ แล้วข้อเสนอจะขึ้นอัตโนมัติ
+  - กด `Tab` เพื่อรับคำแนะนำ, กด `Esc` เพื่อปิด
 
 </v-clicks>
 
@@ -200,18 +198,18 @@ Quick setup guide for immediate productivity
 layout: default
 ---
 
-# Code Completion in Action
+# ตัวอย่าง Code Completion
 
-Real-time suggestions as you code
+แนะนำโค้ดแบบเรียลไทม์ระหว่างเขียน
 
 ````md magic-move {lines: true}
 ```python
-# Start typing a function signature
+# เริ่มพิมพ์ชื่อฟังก์ชัน
 def calculate_fibonacci
 ```
 
 ```python
-# Copilot suggests the implementation
+# Copilot แนะนำ implementation ให้ทันที
 def calculate_fibonacci(n: int) -> int:
     """Calculate the nth Fibonacci number."""
     if n <= 1:
@@ -220,7 +218,7 @@ def calculate_fibonacci(n: int) -> int:
 ```
 
 ```python
-# You can accept and then get test suggestions
+# เมื่อรับโค้ดแล้ว สามารถให้ช่วยแนะนำเทสต์ต่อได้
 def calculate_fibonacci(n: int) -> int:
     """Calculate the nth Fibonacci number."""
     if n <= 1:
@@ -235,35 +233,35 @@ def test_calculate_fibonacci():
 ````
 
 <div v-click class="mt-4 p-4 rounded bg-blue-900 bg-opacity-30 border border-blue-500">
-💡 <strong>Pro Tip:</strong> Write clear function names and comments to get better suggestions
+💡 <strong>เคล็ดลับ:</strong> ตั้งชื่อฟังก์ชันและเขียนคอมเมนต์ให้ชัด จะได้คำแนะนำที่ตรงขึ้น
 </div>
 
 ---
 layout: default
 ---
 
-# Copilot Chat: Your AI Pair Programmer
+# Copilot Chat: ผู้ช่วยเขียนโค้ดคู่ใจ
 
-Natural language conversations about your code
+คุยกับโค้ดของคุณได้ด้วยภาษาธรรมชาติ
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 <div>
 
-### Example Conversations
+### ตัวอย่างบทสนทนา
 
 <v-clicks>
 
-**You:** "Explain this regex pattern"
+**คุณ:** "ช่วยอธิบาย regex นี้หน่อย"
 ```javascript
 /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 ```
 
-**Copilot:** This regex validates email addresses:
-- `^[\w-\.]+` - Username with letters, numbers, dots
-- `@` - Literal @ symbol
-- `([\w-]+\.)+` - Domain parts with dots
-- `[\w-]{2,4}$` - TLD (2-4 characters)
+**Copilot:** regex นี้ใช้ตรวจรูปแบบอีเมล:
+- `^[\w-\.]+` - ส่วนชื่อผู้ใช้ (ตัวอักษร/ตัวเลข/จุด)
+- `@` - เครื่องหมาย @
+- `([\w-]+\.)+` - ส่วนโดเมนที่มีจุดคั่น
+- `[\w-]{2,4}$` - ส่วนท้ายโดเมน (2-4 ตัวอักษร)
 
 </v-clicks>
 
@@ -271,16 +269,16 @@ Natural language conversations about your code
 
 <div>
 
-### Common Use Cases
+### งานที่ใช้บ่อย
 
 <v-clicks>
 
-- 🐛 **Debugging** - "Why isn't this working?"
-- 📚 **Learning** - "How does async/await work?"
-- ♻️ **Refactoring** - "Make this more efficient"
-- 🧪 **Testing** - "Generate unit tests for this"
-- 📖 **Documentation** - "Add JSDoc comments"
-- 🏗️ **Architecture** - "Design a user service"
+- 🐛 **ดีบัก** - "ทำไมโค้ดนี้ไม่ทำงาน?"
+- 📚 **เรียนรู้** - "async/await ทำงานยังไง?"
+- ♻️ **รีแฟกเตอร์** - "ช่วยปรับโค้ดให้มีประสิทธิภาพขึ้น"
+- 🧪 **เขียนเทสต์** - "ช่วยสร้าง unit tests ให้หน่อย"
+- 📖 **ทำเอกสาร** - "เพิ่ม JSDoc ให้ฟังก์ชันนี้"
+- 🏗️ **ออกแบบระบบ** - "ช่วยออกแบบ user service"
 
 </v-clicks>
 
@@ -292,9 +290,9 @@ Natural language conversations about your code
 layout: default
 ---
 
-# Advanced: Slash Commands
+# ขั้นสูง: Slash Commands
 
-Powerful shortcuts for common tasks
+คำสั่งลัดสำหรับงานที่ใช้ซ้ำบ่อย
 
 <div class="grid grid-cols-2 gap-4 mt-6">
 
@@ -304,42 +302,42 @@ Powerful shortcuts for common tasks
 /explain
 ```
 <div class="text-sm opacity-75 mb-4">
-Explains selected code in plain language
+อธิบายโค้ดที่เลือกด้วยภาษาที่เข้าใจง่าย
 </div>
 
 ```markdown
 /fix
 ```
 <div class="text-sm opacity-75 mb-4">
-Suggests fixes for bugs or errors
+เสนอวิธีแก้บั๊กหรือ error
 </div>
 
 ```markdown
 /tests
 ```
 <div class="text-sm opacity-75 mb-4">
-Generates unit tests for your code
+สร้าง unit tests จากโค้ดที่มี
 </div>
 
 ```markdown
 /doc
 ```
 <div class="text-sm opacity-75 mb-4">
-Adds documentation comments
+เพิ่มคอมเมนต์เอกสารประกอบโค้ด
 </div>
 
 ```markdown
 /optimize
 ```
 <div class="text-sm opacity-75 mb-4">
-Suggests performance improvements
+เสนอแนวทางเพิ่มประสิทธิภาพ
 </div>
 
 ```markdown
 /simplify
 ```
 <div class="text-sm opacity-75 mb-4">
-Refactors code for readability
+รีแฟกเตอร์ให้อ่านง่ายขึ้น
 </div>
 
 </v-clicks>
@@ -350,34 +348,34 @@ Refactors code for readability
 layout: default
 ---
 
-# Context is Everything
+# บริบทสำคัญมาก
 
-Helping Copilot understand your code better
+ยิ่งให้บริบทชัด Copilot ยิ่งตอบได้ตรง
 
 <v-clicks>
 
-### 1. Open Relevant Files
+### 1. เปิดไฟล์ที่เกี่ยวข้อง
 ```bash
-# Copilot analyzes open tabs for context
+# Copilot ใช้แท็บที่เปิดอยู่เพื่อทำความเข้าใจบริบท
 src/
   ├── models/user.ts      # ✅ Open
   ├── services/auth.ts    # ✅ Open
   └── utils/validate.ts   # ✅ Open
 ```
 
-### 2. Reference Symbols with @
+### 2. อ้างอิงสัญลักษณ์ด้วย @
 ```markdown
 # In Copilot Chat
-"How does @UserService handle authentication?"
-"Add logging to @calculatePrice function"
+"@UserService จัดการ authentication ยังไง?"
+"ช่วยเพิ่ม logging ในฟังก์ชัน @calculatePrice"
 ```
 
-### 3. Use Descriptive Names
+### 3. ตั้งชื่อให้สื่อความหมาย
 ```typescript
-// ❌ Poor context
+// ❌ ชื่อกำกวม บริบทน้อย
 function calc(a, b) { ... }
 
-// ✅ Good context
+// ✅ ชื่อชัด เข้าใจเจตนาง่าย
 function calculateMonthlyRevenue(sales: Sale[], expenses: Expense[]) { ... }
 ```
 
@@ -387,33 +385,33 @@ function calculateMonthlyRevenue(sales: Sale[], expenses: Expense[]) { ... }
 layout: default
 ---
 
-# Best Practices for Effective Prompts
+# แนวทางเขียนพรอมป์ให้ได้ผล
 
-Get better results with clear communication
+สื่อสารชัดเจน เพื่อให้ได้คำตอบที่ดีขึ้น
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
 <div>
 
-### ✅ Do's
+### ✅ ควรทำ
 
 <v-clicks>
 
-- **Be Specific**
+- **ระบุให้ชัด**
   ```
-  "Create a REST API endpoint for user login 
-  with JWT authentication"
-  ```
-
-- **Provide Context**
-  ```
-  "Using Express.js and TypeScript, 
-  create a middleware for rate limiting"
+  "ช่วยสร้าง REST API สำหรับล็อกอิน
+  โดยใช้ JWT authentication"
   ```
 
-- **Show Examples**
+- **ให้บริบทของเทคโนโลยี**
   ```
-  "Follow this pattern:
+  "ใช้ Express.js และ TypeScript
+  ช่วยเขียน middleware สำหรับ rate limiting"
+  ```
+
+- **ยกตัวอย่างรูปแบบที่ต้องการ**
+  ```
+  "ช่วยทำตามรูปแบบนี้:
   async function getUser(id: string) {...}"
   ```
 
@@ -423,24 +421,24 @@ Get better results with clear communication
 
 <div>
 
-### ❌ Don'ts
+### ❌ ไม่ควรทำ
 
 <v-clicks>
 
-- **Too Vague**
+- **กำกวมเกินไป**
   ```
-  "Make a login thing"
-  ```
-
-- **No Context**
-  ```
-  "Add authentication"
+  "ทำระบบล็อกอินให้หน่อย"
   ```
 
-- **Conflicting Requirements**
+- **ไม่ให้บริบทเลย**
   ```
-  "Make it simple but also handle 
-  all edge cases perfectly"
+  "เพิ่ม authentication"
+  ```
+
+- **เงื่อนไขขัดกันเอง**
+  ```
+  "ขอแบบง่ายมาก ๆ แต่ต้องรองรับ
+  ทุก edge case แบบสมบูรณ์"
   ```
 
 </v-clicks>
@@ -450,20 +448,20 @@ Get better results with clear communication
 </div>
 
 <div v-click class="mt-6 p-4 rounded bg-yellow-900 bg-opacity-30 border border-yellow-500">
-⚡ <strong>Remember:</strong> Copilot is a tool, not a replacement for understanding code
+⚡ <strong>จำไว้:</strong> Copilot คือเครื่องมือช่วย ไม่ใช่ตัวแทนความเข้าใจโค้ดของเรา
 </div>
 
 ---
 layout: default
 ---
 
-# Real-World Example: Building a REST API
+# ตัวอย่างจริง: สร้าง REST API
 
-Watch Copilot build an API endpoint step by step
+ดูการทำงานแบบทีละขั้นด้วย Copilot
 
 <v-clicks>
 
-### Step 1: Define the interface
+### ขั้นตอนที่ 1: กำหนด interface
 ```typescript
 interface User {
   id: string;
@@ -473,9 +471,9 @@ interface User {
 }
 ```
 
-### Step 2: Create the handler
+### ขั้นตอนที่ 2: สร้าง handler
 ```typescript
-// Copilot suggests the full implementation
+// Copilot แนะนำโค้ดตัวเต็มให้
 app.post('/api/users', async (req: Request, res: Response) => {
   const { email, name } = req.body;
   const user: User = {
@@ -495,9 +493,9 @@ app.post('/api/users', async (req: Request, res: Response) => {
 layout: default
 ---
 
-# Security & Privacy Considerations
+# ประเด็นความปลอดภัยและความเป็นส่วนตัว
 
-Keeping your code safe while using AI
+ใช้ AI อย่างมั่นใจ โดยไม่ลดมาตรฐานความปลอดภัย
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
@@ -505,43 +503,43 @@ Keeping your code safe while using AI
 
 <div class="p-4 rounded bg-red-900 bg-opacity-20 border border-red-500">
 
-### 🔒 What to Watch For
+### 🔒 สิ่งที่ต้องระวัง
 
-- **Secrets in Code**
-  - Don't commit API keys
-  - Use environment variables
-  - Review suggestions carefully
+- **ความลับในโค้ด**
+  - ห้าม commit API keys
+  - ใช้ environment variables
+  - ตรวจข้อเสนอแนะก่อนรับเสมอ
 
-- **Sensitive Data**
-  - Customer information
-  - Internal business logic
-  - Proprietary algorithms
+- **ข้อมูลอ่อนไหว**
+  - ข้อมูลลูกค้า
+  - ตรรกะธุรกิจภายใน
+  - อัลกอริทึมเฉพาะขององค์กร
 
-- **License Compliance**
-  - Review generated code
-  - Check for copyrighted patterns
-  - Understand usage rights
+- **การปฏิบัติตามลิขสิทธิ์**
+  - รีวิวโค้ดที่ถูกสร้าง
+  - ตรวจแพตเทิร์นที่อาจติดลิขสิทธิ์
+  - เข้าใจสิทธิ์การใช้งานให้ชัด
 
 </div>
 
 <div class="p-4 rounded bg-green-900 bg-opacity-20 border border-green-500">
 
-### ✅ Best Practices
+### ✅ แนวทางที่ควรทำ
 
-- **Use GitHub Copilot for Business**
-  - No training on your code
-  - Enhanced privacy controls
-  - Admin oversight
+- **ใช้ GitHub Copilot for Business**
+  - ไม่นำโค้ดของคุณไปเทรน
+  - มีตัวเลือกควบคุมความเป็นส่วนตัวมากขึ้น
+  - ผู้ดูแลระบบตรวจสอบได้
 
-- **Review All Suggestions**
-  - Don't blindly accept
-  - Understand the code
-  - Test thoroughly
+- **ตรวจทุกคำแนะนำก่อนรับ**
+  - ไม่กดรับแบบไม่ดู
+  - ต้องเข้าใจโค้ดที่ได้
+  - ทดสอบให้รอบคอบ
 
-- **Configure Properly**
-  - Set content exclusions
-  - Use .copilotignore
-  - Enable audit logs
+- **ตั้งค่าให้เหมาะสม**
+  - กำหนด content exclusions
+  - ใช้ไฟล์ .copilotignore
+  - เปิดใช้งาน audit logs
 
 </div>
 
@@ -553,13 +551,13 @@ Keeping your code safe while using AI
 layout: default
 ---
 
-# Maximizing Your Productivity
+# เพิ่มประสิทธิภาพการทำงานให้สูงสุด
 
-Strategies for getting the most from Copilot
+เทคนิคใช้ Copilot ให้คุ้มที่สุด
 
 <v-clicks>
 
-### 1. Start with Comments
+### 1. เริ่มด้วยคอมเมนต์ที่ชัดเจน
 ```javascript
 // Function to validate email format and check if domain exists
 // Returns true if valid, false otherwise
@@ -567,9 +565,9 @@ Strategies for getting the most from Copilot
 function validateEmail(email: string): Promise<boolean>
 ```
 
-### 2. Use Test-Driven Development
+### 2. ใช้แนวคิด Test-Driven Development
 ```typescript
-// Write tests first, let Copilot implement
+// เขียนเทสต์ก่อน แล้วให้ Copilot ช่วยเติม implementation
 describe('UserService', () => {
   it('should create a new user with hashed password', async () => {
     const user = await userService.create('test@example.com', 'password123');
@@ -578,10 +576,10 @@ describe('UserService', () => {
 });
 ```
 
-### 3. Iterate and Refine
-- Accept suggestion → Review → Refine → Repeat
-- Use chat to explain what you want differently
-- Learn from the patterns Copilot suggests
+### 3. ทำซ้ำและปรับต่อเนื่อง
+- รับคำแนะนำ → รีวิว → ปรับแก้ → ทำซ้ำ
+- ใช้แชตอธิบายสิ่งที่อยากให้เปลี่ยน
+- เรียนรู้จากแพตเทิร์นที่ Copilot แนะนำ
 
 </v-clicks>
 
@@ -589,55 +587,55 @@ describe('UserService', () => {
 layout: default
 ---
 
-# The Future of Coding Agents
+# อนาคตของ Coding Agents
 
-What's coming next in AI-assisted development
+สิ่งที่กำลังจะเกิดขึ้นในการพัฒนาซอฟต์แวร์ด้วย AI
 
 <v-clicks>
 
-### Emerging Trends
+### เทรนด์ที่กำลังมา
 
 <div class="grid grid-cols-3 gap-4 mt-4">
 
 <div class="p-4 rounded bg-purple-900 bg-opacity-30">
 
 **🤖 Autonomous Agents**
-- Self-directed coding
-- Multi-step task completion
-- Proactive bug fixes
+- ลงมือทำงานได้เองมากขึ้น
+- ทำงานหลายขั้นตอนได้ต่อเนื่อง
+- ตรวจพบและแก้บั๊กเชิงรุก
 
 </div>
 
 <div class="p-4 rounded bg-blue-900 bg-opacity-30">
 
 **🔗 Multi-Agent Systems**
-- Specialized agents
-- Collaborative workflows
-- Domain expertise
+- มีเอเจนต์เฉพาะทาง
+- ทำงานร่วมกันเป็นเวิร์กโฟลว์
+- เชี่ยวชาญตามโดเมน
 
 </div>
 
 <div class="p-4 rounded bg-green-900 bg-opacity-30">
 
-**🧠 Deeper Understanding**
-- Full project context
-- Architecture awareness
-- Business logic comprehension
+**🧠 ความเข้าใจที่ลึกขึ้น**
+- เห็นบริบททั้งโปรเจกต์
+- เข้าใจสถาปัตยกรรมระบบ
+- จับตรรกะธุรกิจได้ดีขึ้น
 
 </div>
 
 </div>
 
-### The Developer's Role is Evolving
+### บทบาทนักพัฒนากำลังเปลี่ยน
 
-- From **writing code** → to **directing code**
-- From **fixing bugs** → to **reviewing solutions**
-- From **learning syntax** → to **designing systems**
+- จาก **เขียนโค้ดเองทุกบรรทัด** → เป็น **ผู้ออกแบบและกำกับโค้ด**
+- จาก **ตามแก้บั๊กทีละจุด** → เป็น **ผู้รีวิวแนวทางแก้ปัญหา**
+- จาก **ท่อง syntax** → เป็น **ผู้ออกแบบระบบ**
 
 </v-clicks>
 
 <div v-click class="mt-6 text-center text-xl opacity-75">
-🚀 The future is collaborative: Human creativity + AI efficiency
+🚀 อนาคตคือการทำงานร่วมกัน: ความคิดสร้างสรรค์ของมนุษย์ + ประสิทธิภาพของ AI
 </div>
 
 ---
@@ -645,25 +643,25 @@ layout: center
 class: text-center
 ---
 
-# Questions & Discussion
+# คำถามและการพูดคุย
 
-Let's explore coding agents together
+มาคุยกันว่า Coding Agents จะช่วยงานคุณได้อย่างไร
 
 <div class="mt-8 grid grid-cols-3 gap-8 items-center justify-center">
 
 <div>
   <carbon-chat class="text-6xl mb-2 mx-auto" />
-  <div>Ask Questions</div>
+  <div>ถามคำถาม</div>
 </div>
 
 <div>
   <carbon-code class="text-6xl mb-2 mx-auto" />
-  <div>Share Experiences</div>
+  <div>แชร์ประสบการณ์</div>
 </div>
 
 <div>
   <carbon-collaborate class="text-6xl mb-2 mx-auto" />
-  <div>Collaborate</div>
+  <div>แลกเปลี่ยนไอเดีย</div>
 </div>
 
 </div>
@@ -679,9 +677,9 @@ Let's explore coding agents together
 layout: end
 ---
 
-# Thank You!
+# ขอบคุณครับ!
 
-Start your journey with coding agents today
+เริ่มใช้งาน Coding Agents ตั้งแต่วันนี้
 
 <div class="abs-br m-6 text-xl">
   <carbon-logo-github /> AgentCon BKK 2026
