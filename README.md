@@ -1,37 +1,43 @@
 # Getting Started with Coding Agents using GitHub Copilot
 
-A comprehensive Slidev presentation for AgentCon BKK 2026
+A comprehensive hands-on resource for AgentCon BKK 2026, covering how to use GitHub Copilot as a coding agent across four practical workshops.
 
 ## 🎯 Overview
 
-This presentation provides a technical deep dive into coding agents and GitHub Copilot, covering:
-- What coding agents are and how they work
-- GitHub Copilot features and capabilities
-- Best practices for effective prompts
-- Real-world examples and use cases
-- Security and privacy considerations
-- The future of AI-assisted development
+This repository contains four workshops that guide you through using GitHub Copilot in real-world scenarios — from building presentations and diagrams to designing web pages and developing full web applications.
+
+Each workshop includes step-by-step exercises, practical examples, and Copilot prompting tips you can apply immediately.
+
+## 🗂️ Workshops
+
+| # | Workshop | Description |
+|---|----------|-------------|
+| 1 | [Building Presentations with GitHub Copilot](./workshop-01-presentations/) | Use Copilot and Slidev to create engaging developer presentations |
+| 2 | [Creating Diagrams with GitHub Copilot](./workshop-02-diagrams/) | Generate Mermaid diagrams from natural language using Copilot |
+| 3 | [Designing a Web Page with GitHub Copilot](./workshop-03-webpage/) | Build a responsive static web page with HTML, CSS, and JS |
+| 4 | [Developing a Web Application with GitHub Copilot](./workshop-04-webapp/) | Scaffold and build a full Node.js + Express web app end-to-end |
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 18+ installed
-- npm or pnpm package manager
+- [Node.js 18+](https://nodejs.org/)
+- [VS Code](https://code.visualstudio.com/) with the [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- npm package manager
 
-### Installation
+### Run the Presentation (Workshop 1)
 
 ```bash
 # Install dependencies
 npm install
 
-# Start the development server
+# Start the Slidev development server
 npm run dev
 ```
 
 The presentation will be available at http://localhost:3030/
 
-### Available Commands
+### Available Presentation Commands
 
 ```bash
 # Start development server with live reload
@@ -44,30 +50,22 @@ npm run build
 npm run export
 ```
 
-## 📝 Presentation Features
+## 📝 Presentation (`slides.md`)
+
+The root `slides.md` is a complete Slidev presentation covering coding agents and GitHub Copilot. It is used as the foundation for Workshop 1 and includes:
 
 - **Dark Theme**: Optimized for technical conference presentations
-- **16 Slides**: Title, agenda, 12 content slides, Q&A, and thank you
-- **Interactive Elements**: Click animations, code examples, and diagrams
-- **Modern Styling**: Clean typography with Inter, Robot Slab, and Fira Code fonts
-- **Code Highlighting**: Syntax highlighting with Shiki
+- **Interactive Elements**: Click animations, code examples, and Mermaid diagrams
 - **Presenter Mode**: Separate presenter view with notes
-
-## 🎨 Customization
-
-The presentation is defined in `slides.md`. You can customize:
-- Content and slides
-- Theme settings in the frontmatter
-- Fonts and styling
-- Code examples
-- Images and backgrounds
+- **Code Highlighting**: Syntax highlighting with Shiki
 
 ## 📚 Resources
 
 - [Slidev Documentation](https://sli.dev/)
-- [GitHub Copilot](https://github.com/features/copilot)
+- [Mermaid Diagram Editor](https://mermaid.live/)
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 - [AgentCon BKK 2026](https://agentcon.org)
 
 ## 📄 License
 
-MIT License - See LICENSE file for details
+MIT License — See the [LICENSE](./LICENSE) file for details.
