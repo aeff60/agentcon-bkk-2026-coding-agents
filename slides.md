@@ -52,6 +52,7 @@ layout: default
 - 🔒 **ความปลอดภัยและความเป็นส่วนตัว** - ใช้อย่างมั่นใจ
 - 🎓 **กลยุทธ์การเรียนรู้** - เพิ่มประสิทธิภาพการทำงาน
 - 🔮 **อนาคตของ Coding Agents** - กำลังไปทางไหน
+- 🧩 **Workshop #5** - สร้าง Edge/Chrome Extension ง่าย ๆ ด้วย Copilot
 - 📝 **Q&A** - ถาม-ตอบท้ายเซสชัน
 
 </v-clicks>
@@ -636,6 +637,147 @@ layout: default
 
 <div v-click class="mt-6 text-center text-xl opacity-75">
 🚀 อนาคตคือการทำงานร่วมกัน: ความคิดสร้างสรรค์ของมนุษย์ + ประสิทธิภาพของ AI
+</div>
+
+---
+layout: default
+---
+
+# 🧩 Workshop #5: สร้าง Edge/Chrome Extension ง่าย ๆ
+
+ใช้ GitHub Copilot ช่วยสร้าง Browser Extension ตั้งแต่ต้น
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+<v-clicks>
+
+<div class="p-4 rounded bg-gray-800">
+
+### 🎯 เป้าหมาย
+สร้าง Extension ที่ทำงานได้จริงใน Edge/Chrome:
+- แสดง Popup เมื่อคลิก icon
+- อ่านและแสดง URL ของหน้าปัจจุบัน
+- มีปุ่ม Copy URL ใช้ง่าย
+
+</div>
+
+<div class="p-4 rounded bg-gray-800">
+
+### 📁 โครงสร้างไฟล์
+```
+my-extension/
+├── manifest.json   # ไฟล์หลักของ Extension
+├── popup.html      # หน้า UI ของ Popup
+├── popup.js        # Logic ของ Popup
+└── icon.png        # ไอคอน Extension
+```
+
+</div>
+
+</v-clicks>
+
+</div>
+
+<div v-click class="mt-4 p-4 rounded bg-blue-900 bg-opacity-30 border border-blue-500">
+💡 <strong>เคล็ดลับ:</strong> บอก Copilot ว่า "สร้าง Chrome Extension Manifest V3 ที่..." แล้วระบุสิ่งที่ต้องการ
+</div>
+
+---
+layout: default
+---
+
+# Workshop #5: โค้ดตัวอย่าง
+
+ให้ Copilot ช่วยสร้างทีละไฟล์
+
+<div class="grid grid-cols-2 gap-4 mt-2">
+
+<v-clicks>
+
+<div>
+
+### manifest.json
+```json
+{
+  "manifest_version": 3,
+  "name": "My First Extension",
+  "version": "1.0",
+  "description": "แสดง URL ของหน้าปัจจุบัน",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab"]
+}
+```
+
+</div>
+
+<div>
+
+### popup.html
+```html
+<!DOCTYPE html>
+<html>
+<body style="width:300px;padding:16px">
+  <h3>🔗 URL ปัจจุบัน</h3>
+  <p id="url" style="word-break:break-all"></p>
+  <button id="copy">Copy URL</button>
+  <script src="popup.js"></script>
+</body>
+</html>
+```
+
+### popup.js
+```javascript
+chrome.tabs.query({active:true, currentWindow:true},
+  ([tab]) => {
+    if (!tab) return;
+    document.getElementById('url').textContent = tab.url;
+    document.getElementById('copy').onclick = () =>
+      navigator.clipboard.writeText(tab.url)
+        .catch(() => alert('ไม่สามารถ copy ได้'));
+  }
+);
+```
+
+</div>
+
+</v-clicks>
+
+</div>
+
+---
+layout: default
+---
+
+# Workshop #5: วิธีทดสอบ Extension
+
+โหลด Extension เข้า Browser แบบ Developer Mode
+
+<v-clicks>
+
+### ขั้นตอนติดตั้ง
+
+1. **เปิด Extensions Manager**
+   - Chrome: `chrome://extensions/`
+   - Edge: `edge://extensions/`
+
+2. **เปิด Developer Mode** (สวิตช์มุมขวาบน)
+
+3. **โหลดโฟลเดอร์ Extension**
+   - คลิก **"Load unpacked"**
+   - เลือกโฟลเดอร์ `my-extension/`
+
+4. **ทดสอบ**
+   - คลิก icon Extension ใน toolbar
+   - ตรวจสอบว่า URL แสดงถูกต้อง
+   - ทดสอบปุ่ม Copy URL
+
+</v-clicks>
+
+<div v-click class="mt-6 p-4 rounded bg-green-900 bg-opacity-30 border border-green-500">
+🚀 <strong>ลองต่อ:</strong> ให้ Copilot ช่วยเพิ่มฟีเจอร์ เช่น บันทึกประวัติ URL หรือ แปลงเป็น QR Code
 </div>
 
 ---
