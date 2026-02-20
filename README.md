@@ -16,6 +16,7 @@ Each workshop includes step-by-step exercises, practical examples, and Copilot p
 | 2 | [Creating Diagrams with GitHub Copilot](./workshop-02-diagrams/) | Generate Mermaid diagrams from natural language using Copilot |
 | 3 | [Designing a Web Page with GitHub Copilot](./workshop-03-webpage/) | Build a responsive static web page with HTML, CSS, and JS |
 | 4 | [Developing a Web Application with GitHub Copilot](./workshop-04-webapp/) | Scaffold and build a full Node.js + Express web app end-to-end |
+| 5 | [Building a Browser Extension with GitHub Copilot](./workshop-05-extension/) | Create a Chrome/Edge browser extension with a popup and content script |
 
 ## 🚀 Quick Start
 
