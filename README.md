@@ -66,6 +66,7 @@ The root `slides.md` is a complete Slidev presentation covering coding agents an
 - [Mermaid Diagram Editor](https://mermaid.live/)
 - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 - [AgentCon BKK 2026](https://globalai.community/chapters/bangkok/events/agentcon-bangkok/)
+- [Session Presentation](https://docs.google.com/presentation/d/1z8Bgn7Zn2oPOVk1V7lzXnt2S1KACAjJrKkpo8K65Z60/edit?usp=sharing)
 
 ## 📄 License
 
